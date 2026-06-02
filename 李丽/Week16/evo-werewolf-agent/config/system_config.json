@@ -1,0 +1,5 @@
+{
+  "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "api_key": "sk-a9bfe3013fe143ea8995960109766c6f",
+  "default_model": "qwen-flash"
+}
