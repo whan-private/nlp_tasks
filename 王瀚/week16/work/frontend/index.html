@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 狼人杀 — 观战台</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <header>
+    <h1>🐺 AI 狼人杀</h1>
+    <div class="controls">
+      <button id="btnGames">📋 对局列表</button>
+      <span id="gameInfo"></span>
+    </div>
+  </header>
+
+  <div id="gameListPanel" class="panel hidden">
+    <h2>最近对局</h2>
+    <ul id="gameList"></ul>
+  </div>
+
+  <main id="gameView" class="hidden">
+    <div id="statusBar">
+      <span id="phaseDisplay">—</span>
+      <span id="roundDisplay">—</span>
+      <span id="winnerDisplay"></span>
+    </div>
+
+    <div id="playerGrid"></div>
+
+    <div id="eventLog">
+      <div class="log-header">📜 事件日志</div>
+      <div id="logEntries"></div>
+    </div>
+  </main>
+
+  <div id="welcome" class="panel">
+    <h2>🐺 AI 狼人杀 — 多智能体博弈观战台</h2>
+    <p>选择一局对局记录观战，或运行 <code>python werewolf/main.py</code> 生成新对局。</p>
+    <p class="hint">对局日志自动保存至 <code>werewolf/logs/</code> 目录</p>
+    <button id="btnRefresh">🔄 刷新对局列表</button>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
